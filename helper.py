@@ -71,9 +71,6 @@ def compose_image():
     im_bg.paste(im_head,mask=im_head)
     newsize = (512,512)
     newimg = im_bg.resize(newsize, Image.AFFINE)
-    
-    # im_bg.show()
-    # print(type(im_bg))
     return newimg
 
 def save_images(number_of_images=20):
@@ -87,31 +84,26 @@ def save_images(number_of_images=20):
         path_to_save = 'images/'+str(i+1)+'.png'
         print(path_to_save)
         img.save(path_to_save)
-        # img.save('images/'+str(i+1)+'.png')
-
-
-
-    pass
+       
 
 
 
 
-
-def test_show_image():
-    im_bg = Image.open('layers/Background/bg_beach#4.png')
-    im_body = Image.open('layers/Body/batman_black_body#100.png')
-    im_head = Image.open('layers/Head/head_blonde_girl#100.png')
-    im_eyes = Image.open('layers/Eyes/eyes_cross#100.png')
-    im_legs= Image.open('layers/Legs/legs_rocket#100.png')
-    im_mouth = Image.open('layers/Mouth/mouth_long#100.png')
-    # im = Image.composite(im_body, im_bg, im_bg)
-    im_head.paste(im_eyes,mask=im_eyes)
-    im_head.paste(im_mouth,mask=im_mouth)
-    im_body.paste(im_legs,mask=im_legs)
-    im_bg.paste(im_body, mask=im_body)
-    im_bg.paste(im_head,mask=im_head)
+# def test_show_image():
+#     im_bg = Image.open('layers/Background/bg_beach#4.png')
+#     im_body = Image.open('layers/Body/batman_black_body#100.png')
+#     im_head = Image.open('layers/Head/head_blonde_girl#100.png')
+#     im_eyes = Image.open('layers/Eyes/eyes_cross#100.png')
+#     im_legs= Image.open('layers/Legs/legs_rocket#100.png')
+#     im_mouth = Image.open('layers/Mouth/mouth_long#100.png')
+#     # im = Image.composite(im_body, im_bg, im_bg)
+#     im_head.paste(im_eyes,mask=im_eyes)
+#     im_head.paste(im_mouth,mask=im_mouth)
+#     im_body.paste(im_legs,mask=im_legs)
+#     im_bg.paste(im_body, mask=im_body)
+#     im_bg.paste(im_head,mask=im_head)
     
-    # im_body.paste(im_bg)
-    im_bg.show()
+#     # im_body.paste(im_bg)
+#     im_bg.show()
 
 
