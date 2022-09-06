@@ -1,5 +1,5 @@
 Download the code.
-Adjust the number of generated images in the main program ( `number_of_images`)
+Adjust the number of generated images in the main program ( `NUM_IMAGES`)
 
 Run 
 ` $ python main.py` 
@@ -7,3 +7,5 @@ Run
 Find images in the images folder.
 
 Enjoy! 
+
+NEXT UP: Creating metadata in json format 
